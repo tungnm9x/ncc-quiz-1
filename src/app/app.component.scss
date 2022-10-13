@@ -1,17 +1,29 @@
 @import "/src/styles/variables.scss";
-$sidebar-width: 150px;
+@import "/src/styles/mixins.scss";
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: $sidebar-width;
-  height: 100vh;
-  background-color: $light-black;
-  color: $light-white;
-}
+.wrapper {
+  height: 100%;
+  & .sidebar {
+    background-color: $light-black;
+    color: $light-white;
 
-.main {
-  padding-left: $sidebar-width;
+    @include desktop() {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: $sidebar-width;
+      height: 100vh;
+    }
+  }
+
+  & .main {
+    position: relative;
+    padding-bottom: $footer-height;
+    height: 100%;
+
+    @include desktop() {
+      padding-left: $sidebar-width;
+    }
+  }
 }

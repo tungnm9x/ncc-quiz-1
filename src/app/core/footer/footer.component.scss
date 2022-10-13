@@ -1,0 +1,15 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
+.footer-wrapper {
+  padding-block: 30px;
+  border-top: 1px solid #dedede;
+  background: $white;
+
+  @include desktop() {
+    position: fixed;
+    left: $sidebar-width;
+    bottom: 0;
+    right: 0;
+  }
+}
