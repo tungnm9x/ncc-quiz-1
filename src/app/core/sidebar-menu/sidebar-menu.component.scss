@@ -1,0 +1,20 @@
+@import "/src/styles/variables.scss";
+
+.item {
+  height: 44px;
+  padding-inline: 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $gray;
+  font-weight: 700;
+  line-height: 18.75px;
+
+  &:hover {
+    background: $gray;
+    color: $white;
+  }
+
+  &.active {
+    color: $white;
+  }
+}

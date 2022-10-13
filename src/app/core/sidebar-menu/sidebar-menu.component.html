@@ -1,0 +1,10 @@
+<ul>
+  <li
+    *ngFor="let i of items"
+    class="item"
+    [routerLink]="i.path"
+    [routerLinkActive]="'active'"
+  >
+    {{ i.label }}
+  </li>
+</ul>

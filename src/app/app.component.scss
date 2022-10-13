@@ -1,0 +1,17 @@
+@import "/src/styles/variables.scss";
+$sidebar-width: 150px;
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $sidebar-width;
+  height: 100vh;
+  background-color: $light-black;
+  color: $light-white;
+}
+
+.main {
+  padding-left: $sidebar-width;
+}

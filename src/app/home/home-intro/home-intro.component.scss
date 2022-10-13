@@ -1,0 +1,19 @@
+@import "/src/styles/variables.scss";
+.intro-wrapper {
+  background: $light-gray;
+  padding-block: 38px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  & .intro-content {
+    width: 100%;
+    max-width: 972px;
+    margin: auto;
+    & .intro-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 18px;
+    }
+  }
+}
